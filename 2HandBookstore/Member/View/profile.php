@@ -26,7 +26,7 @@ include ("../models/getProfile.php");
         <div class="inner">
 
             <!-- Logo -->
-            <a href="../../index.html" class="logo">
+            <a href="../../MainPage/View/index.html" class="logo">
                 <span class="symbol"><img src="../images/logo.svg" alt="" /></span><span class="title">台灣囝仔二手書網</span>
             </a>
 
@@ -55,7 +55,7 @@ include ("../models/getProfile.php");
     <nav id="menu">
         <h2>Menu</h2>
         <ul>
-            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../MainPage/View/index.html">Home</a></li>
             <li><a href="../../generic.html">Ipsum veroeros</a></li>
             <li><a href="../../generic.html">Tempus etiam</a></li>
             <li><a href="../../generic.html">Consequat dolor</a></li>

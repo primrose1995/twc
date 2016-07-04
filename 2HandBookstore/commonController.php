@@ -13,21 +13,27 @@ class commonController
 {
     protected $event = null;
     
-    function __construct($module,$file)
+    function __construct()
     {
         $this->event = new event($_GET,$_POST);
     }
-    // 進行網頁的跳轉
+    // 進行網頁頁面的跳轉
     protected function includeView($module,$file)
     {
-        $includePath = "../".$module."/view/".$file.".php";
+        $includePath = "../".$module."/View/".$file.".php";
         include $includePath;
     }
     
-    // 要在各網頁進行曾刪改查的動作
+    // 各網頁後端動作
     protected function includeAction($module,$file)
     {
-        $includePath = "../".$module."/view/".$file.".php";
+        $includePath = "../".$module."/Control/".$file.".php";
+        include $includePath;
+    }
+    //資料庫的動作
+    protected function includeDB($module,$file)
+    {
+        $includePath = "../".$module."/Model/".$file.".php";
         include $includePath;
     }
 }

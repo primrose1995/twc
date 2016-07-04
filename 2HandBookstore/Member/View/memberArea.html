@@ -33,15 +33,15 @@
             <nav>
                 <?php session_start();
                 if(isset($_SESSION['username'])){?>
-                    <ul>
+                <ul>
 
-                        <form name="form" method="post" action="../../../index.php">
-                            <input type="submit" name="button" value="回到首頁" /></form>
-                    </ul>
-                    <?php echo '您好!'.$_SESSION['username'];} else {?>
-                    <script language="javascript">
-                        alert("您無權觀看此頁面!");
-                    </script>
+                    <form name="form" method="post" action="../../../index.php">
+                        <input type="submit" name="button" value="回到首頁" /></form>
+                </ul>
+                <?php echo '您好!'.$_SESSION['username'];} else {?>
+                <script language="javascript">
+                    alert("您無權觀看此頁面!");
+                </script>
                 <?php echo '<meta http-equiv=REFRESH CONTENT=1;url=../index.php>'; } ?>
             </nav>
 

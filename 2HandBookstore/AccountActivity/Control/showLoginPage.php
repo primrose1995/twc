@@ -13,9 +13,9 @@ class showLoginPage
         $this->showLoginPage();
     }
 
-    private function showLoginPage()
+    public function showLoginPage()
     {
-        include(dirname(__FILE__) . "../view/login.html");
+        header("Refresh: 0; url=../../2HandBookstore/AccountActivity/View/login.html");
     }
 
 }

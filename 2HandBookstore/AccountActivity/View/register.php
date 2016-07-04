@@ -57,7 +57,7 @@ session_start();
 					<nav id="menu">
 						<h2>功能專區</h2>
 						<ul>
-							<li><a href="../../index.html">回到首頁</a></li>
+							<li><a href="../../MainPage/View/index.html">回到首頁</a></li>
 							<li><a href="shoppingcart.html">購物車</a></li>
 							<li><a href="member.html">會員專區</a></li>
 							<li><a href="event.html">活動專區</a></li>
