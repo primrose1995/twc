@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+</head>
+<script src="../../assets/js/commonJS.js" ; src="../Js/Login.js" ;></script>
+<body>
+<!--Navbar-->
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" onclick="showIndex()">台灣囝仔</a>
+        </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-left">
+        <li><a href="event.html">活動專區</a></li>
+        <li><a href="#">熱銷排行</a></li>
+        <li><a href="#">許願池</a></li> 
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html">登入</a></li>
+        <li><a href="signup.html">註冊</a></li>
+        <li><a href="">會員中心</a></li>
+        <li><a href="#">購物車</a></li>
+      </ul>
+        
+    </div><!-- /.navbar-collapse -->
+        
+  </div><!-- /.container-fluid -->
+       
+</nav>
+    
+<!--網站主旨-->
+<div>    
+    <h1 align="center">為了環保，請支持校內二手書流通!<br /></h1>
+    <p align="center">沒事多喝水，有事多上廁所</p>
+</div>
+    
+<!--註冊流程-->
+<div class="row">
+        <div class="col-xs-12 col-md-3">
+            <div class="thumbnail">
+                <h4 style="text-align=center">
+                    Step1 </br>
+                    會員資料填寫
+                </h4>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="thumbnail">
+                <h4 style="text-align=center">
+                    Step2 </br>
+                    輸入驗證碼
+                </h4>
+            </div>
+        </div>    
+        <div class="col-xs-12 col-md-3">
+            <div class="thumbnail">
+                <h4 style="text-align=center">
+                    Step3 </br>
+                    註冊成功
+                </h4>
+            </div>
+        </div>
+    
+</div>       
+    
+<!--註冊表單-->
+<div align="center">
+    <form name="Signupform" action="../Model/signup_connect.php" method="post">
+        <div class="form-group">
+            <label for="exampleInputEmail1">帳號</label>
+            <input type="number" class="form-control" name="account" placeholder="輸入帳號">
+            <label for="exampleInputPassword1">密碼</label>
+            <input type="password" class="form-control" name="password" placeholder="Password">
+            <label for="MemberName">會員名稱</label>
+            <input type="text" class="form-control" name="name" placeholder="會員暱稱">
+            <label for="NameOfUniversity">學校</label>
+            <input type="text" class="form-control"name="school" placeholder="校名(如:中央大學)">
+            <label for="Department">科系</label>
+            <input type="text" class="form-control" name="department" placeholder="科系(如：資管系)">
+            <label for="InputEmail">常用email</label>
+            <input type="email" class="form-control" name="email1" placeholder="常用email">
+            <label for="InputEmail">學校email</label>
+            <input type="email" class="form-control" name="email2" placeholder="學校email">
+            <input type="submit" class="btn btn-default" value="送出">
+        </div> 
+    </form>
+</div>   
+    
+</body>
+</html>
