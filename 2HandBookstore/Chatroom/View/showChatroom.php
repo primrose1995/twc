@@ -14,10 +14,10 @@ setcookie("nick",$nick);
 </head>
 <body>
 <div>
-    <iframe src="/chatroom/model/doChatDisplay.php" height="400px"></iframe>
+    <iframe src="../model/doChatDisplay.php" height="400px"></iframe>
 </div>
 <div>
-    <iframe src="/chatroom/model/doSpeak.php" height="100px"></iframe>
+    <iframe src="../model/doSpeak.php" height="100px"></iframe>
 </div>
 </body>
 </html>

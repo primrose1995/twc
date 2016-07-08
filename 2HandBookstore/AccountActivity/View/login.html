@@ -4,58 +4,61 @@
     <meta charset="UTF-8">
     <title>台灣囝仔二手書網</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script src="../../assets/js/commonJS.js" ; src="../Js/Login.js" ;>
-</script>
+<script src="../../assets/js/commonJS.js" ;></script>
+<script src="../Js/Login.js" ;></script>
 <body>
 <!--Navbar-->
-   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-       
-    <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <a class="navbar-brand" onclick="showIndex()">台灣囝仔</a>
-    </div>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav navbar-left">
-        <li><a href="event.html">活動專區</a></li>
-        <li><a href="#">熱銷排行</a></li>
-        <li><a href="#">許願池</a></li> 
-    </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.html">登入</a></li>
-        <li><a href="signup.html">註冊</a></li>
-        <li><a href="">會員中心</a></li>
-        <li><a href="#">購物車</a></li>
-      </ul>
-        
-    </div><!-- /.navbar-collapse -->
-        
-  </div><!-- /.container-fluid -->
-       
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" onclick="showIndex()">台灣囝仔</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="event.html">活動專區</a></li>
+                <li><a href="#">熱銷排行</a></li>
+                <li><a href="#">許願池</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">登入</a></li>
+                <li><a onclick="showSignUpPage()">註冊</a></li>
+                <li><a href="">會員中心</a></li>
+                <li><a href="#">購物車</a></li>
+
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+
 </nav>
-    
+
 <!--網站主旨-->
-<div>    
-    <h1 align="center">為了環保，請支持校內二手書流通!<br /></h1>
+<div>
+    <h1 align="center">為了環保，請支持校內二手書流通!<br/></h1>
     <p align="center">沒事多喝水，有事多上廁所</p>
-</div> 
-    
+</div>
+
 <!--登入表單-->
-<div align="center">    
-    <form name="LoginForm">
-        <div class="form-group" >
+<div align="center">
+    <form name="LoginForm" method="post" action="../Model/connectLogin.php">
+        <div class="form-group">
             <label for="InputAccount">帳號</label>
-            <input  class="form-control" id="user" placeholder="輸入帳號" name="user">
+            <input type="text" class="form-control"  placeholder="輸入帳號" name="user">
             <label for="InputPassword1">密碼</label>
-            <input type="password" class="form-control" id="password" placeholder="輸入密碼" name="password"></br><!--用id 就不會在網址上面顯示了，但是用name會-->
-            <input type="submit" class="btn btn-default" value="送出" id="loginButton">
+            <input type="password" class="form-control"  placeholder="輸入密碼" name="password"></br>
+            <!--用id 就不會在網址上面顯示了，但是用name會-->
+            <input name="submit" type="submit" class="btn btn-default" value="送出" >
+
         </div>
     </form>
 </div>

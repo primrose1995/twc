@@ -5,8 +5,8 @@
 //連接資料庫
 //只要此頁面上有用到連接MySQL就要include它
 include("../../connect_to_DB.php");
-$id = $_POST['id'];
-$pw = $_POST['pw'];
+$id = $_POST['user'];
+$pw = $_POST['password'];
 
 //搜尋資料庫資料
 $sql = $dbh->query("SELECT * FROM buyer where account = '$id'");
@@ -24,7 +24,7 @@ if($id != null && $pw != null && $row[1] == $id && $row[2] == $pw)
         </script>
         <?php
         $dbh = null;
-        echo '<meta http-equiv=REFRESH CONTENT=1;url=../../index.php>';
+        header("Refresh: 0; url=../../MainPage/MainPageController.php?action=ShowMainPage");
 }
 else
 {      
@@ -34,7 +34,7 @@ else
         </script>
         <?php
         $dbh = null;
-        echo '<meta http-equiv=REFRESH CONTENT=1;url=../View/login.html>';
+        header("Refresh: 0; url=../../AccountActivity/View/login.html");
 }
 
 ?>

@@ -6,14 +6,14 @@
  * Date: 2016/7/2
  * Time: 下午 01:52
  */
-class showLoginPage
+class ShowLoginPage
 {
     public function actionPerformed()
     {
-        $this->showLoginPage();
+        $this->ShowLoginPage();
     }
 
-    public function showLoginPage()
+    public function ShowLoginPage()
     {
         header("Refresh: 0; url=../../2HandBookstore/AccountActivity/View/login.html");
     }
