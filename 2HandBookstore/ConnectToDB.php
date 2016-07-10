@@ -22,8 +22,8 @@ class ConnectToDB
     {
         $this->pdo = new PDO(DB_HOST,DB_NAME, DB_USER, DB_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
     }
-
-    protected function getPDO(){
+// I copied from the busordersystem.
+    public function getPDO(){
         return $this->pdo;
     }
 

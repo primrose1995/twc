@@ -9,6 +9,19 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+.indexIMG{
+    width: 380px;
+    height :250px;
+}
+.memberAreaSection{
+    width: 30%;
+
+}
+.myframe{
+
+    width: 80% ;
+    height: auto  ;
+}
 body {
   margin: 0;
     padding-top: 70px; 
@@ -1307,7 +1320,7 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto;
+
 }
 .img-rounded {
   border-radius: 6px;
@@ -1763,7 +1776,7 @@ pre code {
   border-radius: 0;
 }
 .pre-scrollable {
-  max-height: 340px;
+
   overflow-y: scroll;
 }
 .container {
@@ -2140,7 +2153,7 @@ pre code {
     width: 58.33333333%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 20%;
   }
   .col-md-5 {
     width: 41.66666667%;

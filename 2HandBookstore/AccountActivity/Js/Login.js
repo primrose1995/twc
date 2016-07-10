@@ -1,3 +1,7 @@
+
+
+
+
 $(function() {
     var $form_inputs = $('form input');
     var $rainbow_and_border = $('.rain, .border');
@@ -39,13 +43,10 @@ $(function() {
 
     function MakeRequest() {
         var xmlHttp = getXMLHttp();
-        //var user = document.getElementById("user");
-        //var password = document.getElementById("password");
         var user = document.LoginForm.user.value;
         var password = document.LoginForm.password.value;
-        xmlHttp.open("GET","../loginController.php?action=connectAccount&user=" + user + "&pass=" + password,true);
-        xmlHttp.send(null);
-
+        xmlHttp.open("post",'../loginController.php?action=connectAccount',true);
+        xmlHttp.send("user=" + user + "&pass="+ password);
         xmlHttp.onreadystatechange = function() {
             if (xmlHttp.readyState == 4) {
                 HandleResponse(xmlHttp.responseText);
@@ -54,7 +55,7 @@ $(function() {
     }
 
     function getXMLHttp() {
-        var xmlHttp
+        var xmlHttp = null;
         try {                      //Firefox, Opera 8.0+, Safari
             xmlHttp = new XMLHttpRequest();
         } catch (e) {                //Internet Explorer
@@ -105,6 +106,6 @@ $(function(){
     })
 });
 
-function ShowSignUpPage(){
+function showSignUpPage(){
     location = "../loginController.php?action=ShowSignUpPage";
 }

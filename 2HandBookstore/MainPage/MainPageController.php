@@ -2,7 +2,7 @@
 
 include_once "../commonController.php";
 
-class MainController  extends CommonController {
+class MainController  extends commonController{
     
     private $action = null;
 
@@ -23,13 +23,26 @@ class MainController  extends CommonController {
                 $actionListener = new ShowSignUpPage();
                 break;
             case 'ShowLoginPage':
-                $this->includeAction("AccountActivity","showLoginPage");
-                $actionListener = new showLoginPage();
+                $this->includeAction("AccountActivity","ShowLoginPage");
+                $actionListener = new ShowLoginPage();
                 break;
             case 'ShowMemberAreaPage':
-                $this->includeAction("Member","showMemberAreaPage");
-                $actionListener = new showMemberAreaPage();
+                $this->includeAction("Member","ShowMemberAreaPage");
+                $actionListener = new ShowMemberAreaPage();
                 break;
+            case 'ShowChatroomPage':
+                $this->includeAction("Chatroom","showChatroomPage");
+                $actionListener = new showChatroomPage();
+                break;
+            case 'ShowPoolPage':
+                $this->includeAction("WishingPool","ShowPoolPage");
+                $actionListener = new ShowPoolPage();
+                break;
+            case 'connectLogout':
+                $this->includeDB("AccountActivity","connectLogout");
+                $actionListener = new connectLogout();
+                break;
+            
         }
 
         $actionListener->actionPerformed();

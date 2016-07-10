@@ -6,16 +6,16 @@
  * Date: 2016/7/4
  * Time: 下午 09:22
  */
-class showMemberAreaPage
+class ShowMemberAreaPage
 {
     public function actionPerformed()
     {
-        $this->showMemberAreaPage();
+        $this->ShowMemberAreaPage();
     }
 
-    public function showMemberAreaPage()
+    public function ShowMemberAreaPage()
     {
-        header("Refresh: 0; url=../../2HandBookstore/Member/View/memberArea.html");
+        header("Refresh: 0; url=../../2HandBookstore/Member/View/MemberCenter.html");
     }
 
 }
