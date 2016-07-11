@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="../../assets/Js/commonJS.js"></script>
+<script src="../Js/BookUpload.js";></script>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">台灣囝仔</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="event.html">活動專區</a></li>
+                <li><a href="#">熱銷排行</a></li>
+                <li><a href="wantlist.html">許願池</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">登入</a></li>
+                <li><a href="signup.html">註冊</a></li>
+                <li><a href="membercenter.html">會員中心</a></li>
+                <li><a onclick="showIndex()">回到首頁</a><li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+
+</nav>
+    <!--上傳表單-->
+    <div class="upload">
+
+            <div class="form-group" >
+            <label for="InputISBN">ISBN</label>
+            <input type="text" class="form-control" id="bookISBN" placeholder="書本ISBN">
+            <button type="button" class="btn btn-default" id="bookSearch">送出</button>
+            </div>
+
+    </div>
+        
+    <div class="table-responsive">
+
+            <table class="table"  id="table">
+                <caption>上傳書籍</caption>            
+                <tr>
+                    <th>書籍封面</th>
+                    <th>書籍名稱</th>
+                    <th>書籍類別</th>
+                    <th>ISBN</th>
+                    <th>作者</th>
+                    <th>價格</th>
+                </tr>
+            </table>
+            <button type="button" class="btn btn-default" id="upload">上傳</button>
+
+    </div>
+
+</body>
+</html>

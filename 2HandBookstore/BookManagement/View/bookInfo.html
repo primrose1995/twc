@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="../../assets/Js/commonJS.js" ;></script>
+<script src="../Js/BookInfo.js" ;></script>
+<script>window.onload = WhichPage();</script>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" onclick="showIndex()">台灣囝仔</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="event.html">活動專區</a></li>
+                <li><a href="bestsell.html">熱銷排行</a></li>
+                <li><a href="wantlist.html">許願池</a></li>
+                <li><a href="upload.html">我要賣書</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><p id="name" style="font-size: large "></p></li>
+                <li><a onclick="ShowLoginPage()" id="loginButton">登入</a></li>
+                <li><a onclick="ShowSignUpPage()" id="signUpButton">註冊</a></li>
+                <li><a onclick="showIndex()">回到首頁</a>
+                <li>
+
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+
+</nav>
+<div class="table-responsive" style="align-content: center">
+
+    <ul type=square style="position: absolute; left: 30%">
+        <li><a id="bookName"></a></li>
+        <li><a id="bookISBN"></a></li>
+        <li><a id="bookAuthor"></a></li>
+        <li><a id="bookHome"></a></li>
+        <li><a id="bookPostDate"></a></li>
+        <li><a id="bookPrice"></a></li>
+
+    </ul>
+    <button style="position: absolute; left: 50%; top:70%" onclick="deal()">我要購買</button>
+</div>
+
+</body>
+</html>
